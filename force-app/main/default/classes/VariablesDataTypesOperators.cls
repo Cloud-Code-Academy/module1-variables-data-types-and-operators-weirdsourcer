@@ -268,7 +268,7 @@ public with sharing class VariablesDataTypesOperators {
 
     /**
      * Question 18
-     * Calculate the weekly and monthly paycheck based on hourly rate and number of hours.
+     * Calculate the weekly paycheck based on hourly rate and number of hours.
      * Weekly Paycheck is calculated by the formula: rate multiplied by hours.
      * Example: calculateWeeklyPaycheck(10.0, 40.0) should return 400.0
      * @param hourlyRate The rate of pay per hour.
@@ -282,7 +282,7 @@ public with sharing class VariablesDataTypesOperators {
 
     /**
      * Question 19
-     * Calculate the weekly and monthly paycheck based on hourly rate and number of hours.
+     * Calculate the monthly paycheck based on hourly rate and number of hours.
      * Weekly Paycheck is calculated by the formula: rate multiplied by hours.
      * Monthly Paycheck is calculated by the formula: weekly paycheck multiplied by 4.
      * Example: calculateMonthlyPaycheck(10.0, 40.0) should return 1600.0
