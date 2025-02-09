@@ -126,7 +126,11 @@ public with sharing class VariablesDataTypesOperators {
      */
     public static Boolean isPositive(Integer num) {
         Boolean result = false;
-        if(num >= 0){
+        if (num == null) {
+            result = false;
+        } else if (num == 0) {
+            result = false;
+        } else if (num > 0) {
             result = true;
         }
         return result; // Replace null with the variable you used to store the result
@@ -198,9 +202,9 @@ public with sharing class VariablesDataTypesOperators {
      * @param minutes The number of minutes.
      * @return The number of milliseconds equivalent to the given number of minutes.
      */
-    Integer MILLISECONDS_PER_MINUTE = null; // Make this value a constant
+    static final  Integer MILLISECONDS_PER_MINUTE = 60000; // Make this value a constant
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
-        Integer milliseconds = minutes * 60000;
+        Integer milliseconds = minutes * MILLISECONDS_PER_MINUTE;
         return milliseconds; // Replace null with the variable you used to store the result
     }    
 
@@ -304,7 +308,7 @@ public with sharing class VariablesDataTypesOperators {
         
        
         // Write the code for type casting the divisionResult to an Integer
-        Integer roundedResult = divisionResult.intValue();
+        Integer roundedResult = (Integer) divisionResult.intValue();
         return roundedResult; // Replace null with the variable you used to store the result
     }
 
